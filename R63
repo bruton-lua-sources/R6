@@ -1,0 +1,14 @@
+local args = {
+            {
+                27847473,   -- 1
+                27847445,  -- 2
+                27847382,  -- 1
+                27847412,  -- 2
+                27847359, -- 5
+                134082579   -- 125
+            }
+        }
+        game:GetService("ReplicatedStorage")
+            :WaitForChild("Remotes")
+            :WaitForChild("ChangeCharacterBody")
+            :InvokeServer(unpack(args))
